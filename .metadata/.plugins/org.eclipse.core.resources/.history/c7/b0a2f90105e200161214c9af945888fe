@@ -1,0 +1,18 @@
+package MergeSort;
+
+public class MergeSort {
+	public int[] merge(int[] arr, int start, int end){
+		if(arr.length < 2){
+			return arr;
+		}
+		
+		int middle = arr.length/2;
+		sort(arr, start, middle-1);
+		sort(arr, middle, end);
+		merge(arr, start, middle, end);
+	}
+	
+	public void sort(){
+		
+	}
+}

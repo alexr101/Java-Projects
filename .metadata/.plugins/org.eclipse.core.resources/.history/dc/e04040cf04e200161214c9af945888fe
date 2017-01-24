@@ -1,0 +1,16 @@
+package MergeSort;
+
+public class MergeSort {
+	public int[] merge(int[] arr, int p, int r){
+		if(arr.length < 2){
+			return arr;
+		}
+		
+		int q = arr.length/2;
+		me
+	}
+	
+	public void sort(){
+		
+	}
+}
