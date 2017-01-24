@@ -1,0 +1,23 @@
+package QuickSort;
+
+public class QuickSort {
+	
+	public void merge(int[] arr, int start, int end){
+		if(end > start){
+			//partition point
+			int pp = partition(arr, start, end);
+			merge(arr, start, pp-1);
+			merge(arr, pp+1, end);
+		}
+		
+	}
+	
+	public int partition(int[] arr, int start, int end){
+		int i = start-1;
+		int j = start;
+		int pivot = arr[end];
+		
+		return pp
+		
+	}
+}

@@ -1,0 +1,18 @@
+package QuickSort;
+
+public class QuickSort {
+	
+	public void merge(int[] arr, start, end){
+		if(end > start){
+			int q = partition(arr, start, end);
+			merge(arr, start, q-1);
+			merge(arr, q+1, end);
+		}
+		
+	}
+	
+	function int partition(int[] Arr, int start, int end){
+		
+		
+	}
+}

@@ -1,0 +1,40 @@
+package QuickSort;
+
+public class QuickSort {
+	
+	public void merge(int[] arr, int start, int end){
+		if(end > start){
+			//partition point
+			int pp = partition(arr, start, end);
+			merge(arr, start, pp-1);
+			merge(arr, pp+1, end);
+		}
+		
+	}
+	
+	public int partition(int[] arr, int start, int end){
+		
+		int pivot = arr[end];
+		int i = start-1;
+		
+		//int j = start
+		for(int j = start; j < end-1; j++){
+			if(arr[j] < pivot){
+				i++;
+				int jval = arr[j];
+				int ival = arr[i];
+				arr[j] = ival;
+				arr[i] = jval;
+			}
+		}
+		
+		int ival = arr[i+1];
+		arr[i+1] = pivot;
+		arr[end] = ival;
+		
+		//the pivot is the guaranted array element that is in the 
+		//correct sorted position
+		return i+1 ;
+		
+	}
+}
